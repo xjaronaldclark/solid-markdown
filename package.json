@@ -68,6 +68,7 @@
   "scripts": {
     "dev": "vite serve dev",
     "build": "tsup",
+    "prepare": "npm run build",
     "test": "concurrently pnpm:test:*",
     "test:client": "vitest",
     "test:ssr": "pnpm run test:client --mode ssr",
@@ -108,7 +109,7 @@
     "prettier": "3.0.0",
     "remark-gfm": "^4.0.0",
     "solid-js": "^1.8.5",
-    "tsup": "^7.2.0",
+    "tsup": "^8.0.0",
     "tsup-preset-solid": "^2.1.0",
     "typescript": "^5.2.2",
     "vite": "^4.5.0",
